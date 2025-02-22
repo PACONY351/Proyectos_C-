@@ -1,5 +1,5 @@
 #include<iostream>
-#include<conio.h>
+
 
 template <class TIPOD>
 void despliegue(TIPOD dato);
@@ -17,7 +17,6 @@ int main(){
 	despliegue(dato3);
 	despliegue(dato4);
 
-	getch();
 	return 0;
 }
 
