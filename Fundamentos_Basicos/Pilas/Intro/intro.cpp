@@ -145,16 +145,21 @@ struct Nodo{
 };
 //	PROTOTIPOS
 void agregarPila(Nodo *&, int);
+void sacarPila(Nodo *&, int *);
 
 int main(){
 
 	Nodo *pila = NULL;
-	int n1,n2;
+	int dato;
 
 	std::cout<<"Digite un numero: ";
-	std::cin>>n1;
-	agregarPila(pila, n1);
+	std::cin>>dato;
+	agregarPila(pila, dato);
+	std::cout<<"Digite otro numero: ";
+	std::cin>>dato;
+	agregarPila(pila, dato);
 
+	std::cout<<"Sacando los elementos de la Pila: "<<std::endl;
 
 
 
@@ -172,5 +177,8 @@ void agregarPila(Nodo *&pila, int n){
 }
 
 void sacarPila(Nodo *& pila, int &n){
-	
+	Nodo *aux = pila;
+	n = aux -> dato;
+	pila = aux -> siguiente;
+	delete aux;
 }
