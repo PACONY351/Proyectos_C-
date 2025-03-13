@@ -135,50 +135,137 @@
 
 
 
-#include<iostream>
-#include<stdlib.h>
-
+#include <iostream>
+#include <stdlib.h>
+	
 //	ESTRUCTURAS
-struct Nodo{
+struct Nodo {		
 	int dato;
-	Nodo *siguiente;
+	Nodo* siguiente;
 };
+	
+// GLOBALES
+Nodo* pila = NULL;
+int dato = 0;
+	
 //	PROTOTIPOS
-void agregarPila(Nodo *&, int);
-void sacarPila(Nodo *&, int *);
-
-int main(){
-
-	Nodo *pila = NULL;
-	int dato;
-
-	std::cout<<"Digite un numero: ";
-	std::cin>>dato;
-	agregarPila(pila, dato);
-	std::cout<<"Digite otro numero: ";
-	std::cin>>dato;
-	agregarPila(pila, dato);
-
-	std::cout<<"Sacando los elementos de la Pila: "<<std::endl;
-
-
-
+int menuPrincipal();
+void opcionMenu(int);
+	
+void opAgregar();
+void opSacar();
+void opMostrar(Nodo*&);
+	
+void agregarPila(Nodo*&, int);
+void sacarPila(Nodo*&, int&);
+	
+int main() {
+	opcionMenu(menuPrincipal());
 	return 0;
 }
-
+	
 //FUNCIONES
-void agregarPila(Nodo *&pila, int n){
-	Nodo *nuevo_nodo = new Nodo();
-	nuevo_nodo -> dato = n;
-	nuevo_nodo -> siguiente = pila;
-	pila = nuevo_nodo;
-
-	std::cout<<"Elemento "<<n<<" agregado a la pila."<<std::endl;
+int menuPrincipal() {
+	int opcion = -1;
+	
+	std::cout << "\n||- TEMA: PILAS -||" << std::endl;
+	std::cout << "||               ||" << std::endl;
+	std::cout << "|| 1 - Agregar   ||" << std::endl;
+	std::cout << "|| 2 - Eliminar  ||" << std::endl;
+	std::cout << "|| 3 - Mostar    ||" << std::endl;
+	std::cout << "|| 4 - Salir     ||" << std::endl;
+	
+	do {
+		std::cout << "|| Opcion: ";
+		std::cin >> opcion;
+	
+		if (std::cin.fail()) { // Verificar si la entrada es válida
+			std::cin.clear();  // Limpiar el estado de error
+			std::cin.ignore(10000, '\n'); // Descartar la entrada inválida
+			opcion = -1;
+		}
+	
+	} while (opcion < 1 || opcion > 4);
+	
+	return opcion;
 }
-
-void sacarPila(Nodo *& pila, int &n){
-	Nodo *aux = pila;
-	n = aux -> dato;
-	pila = aux -> siguiente;
+	
+void opcionMenu(int op) {
+	switch (op) {
+		case 1:
+			opAgregar();
+			opcionMenu(menuPrincipal());
+			break;
+		case 2:
+			opSacar();
+			opcionMenu(menuPrincipal());
+			break;
+		case 3:
+			opMostrar(pila);
+			opcionMenu(menuPrincipal());
+			break;
+		case 4:
+			std::cout << "||----- ADIOS -----||" << std::endl;
+			exit(0); // Finalizar el programa
+			break;
+		default:
+			break;
+	}
+}
+	
+void opAgregar() {
+	int dato;
+	do {
+		std::cout << "Digite un numero (0 para terminar): ";
+		std::cin >> dato;
+	
+			if (dato != 0) {
+				agregarPila(pila, dato);
+			}
+	
+	} while (dato != 0);
+}
+	
+void opSacar() {
+	std::cout << "Sacando los elementos de la Pila: " << std::endl;
+	std::cout << "[-";
+		
+	while (pila != NULL) {
+		sacarPila(pila, dato);
+		std::cout << "<" << dato << ">";
+	}
+	
+	std::cout << "-]" << std::endl;
+}
+	
+void agregarPila(Nodo*& pila, int n) {
+	Nodo* nuevo_nodo = new Nodo();
+	nuevo_nodo->dato = n;
+	nuevo_nodo->siguiente = pila;
+	pila = nuevo_nodo;
+	
+	std::cout << "Elemento " << n << " agregado a la pila." << std::endl;
+}
+	
+void sacarPila(Nodo*& pila, int& n) {
+	if (pila == NULL) {
+		std::cout << "La pila esta vacia." << std::endl;
+		return;
+	}
+	
+	Nodo* aux = pila;
+	n = aux->dato;
+	pila = aux->siguiente;
 	delete aux;
 }
+	
+void opMostrar(Nodo*& pila){
+	Nodo* aux = pila;
+	std::cout << "Mostrando los elementos de la Pila: " << std::endl;
+	while (aux != NULL) {
+		std::cout<< aux -> dato << " ";
+		aux = aux -> siguiente;
+	}
+	std::cout << std::endl;
+}
+	

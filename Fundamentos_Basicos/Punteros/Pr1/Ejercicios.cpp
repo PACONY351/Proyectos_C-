@@ -24,6 +24,7 @@ void arreglosParImpar();
 void arreglosNumMenorMayor();
 void direccionMemoria();
 void intercambioMemoria(float*, float*);  
+void arregloDeMaximo();
 void hallarMaximo(int *, int);  
 void ordenarArreglo();
 void numeroDeVocales();
@@ -66,14 +67,21 @@ void menuPuntero(){
     std::cout<<"6 - Direccion de Memoria"<<std::endl;
     std::cout<<"7 - Arreglo de Maximo"<<std::endl;
     std::cout<<"8 - Ordenar Arreglo"<<std::endl;
+    std::cout<<"9 - Numero de Vocales"<<std::endl;
+    std::cout<<"10 - Matriz con Punteros"<<std::endl;
+    std::cout<<"11 - Suma de Matrices"<<std::endl;
+    std::cout<<"12 - Puntero Estructura"<<std::endl;
+    std::cout<<"13 - Puntero Estructura 2"<<std::endl;
     do{
         std::cout<<"Opcion: ";std::cin>>opcion;
-    }while(opcion < 0 || opcion > 10);
+    }while(opcion < 0 || opcion > 13);
     seleccion(opcion);
 }
 
 void seleccion(int opcion){
     switch(opcion){
+        case 0:
+            break;
         case 1:
             parImpar();
             break;
@@ -97,8 +105,25 @@ void seleccion(int opcion){
             break;
         case 8:
             ordenarArreglo();
+            break;
+        case 9:
+            numeroDeVocales();
+            break;
+        case 10:
+            matrizConPunteros();
+            break;
+        case 11:
+            sumaMatrices();
+            break;
+        case 12:
+            punteroEstructura();
+            break;
+        case 13:
+            punteroEstructura2();
             break;    
         default:
+            std::cout<<"Elige una opcion valida de 0-13"<<std::endl;
+            menuPuntero();
             break;  
     }
 }
@@ -400,7 +425,7 @@ void sumaMatrices(){
     }
 }
 
-void punteroEstructura2(){
+void punteroEstructura(){
     std::cout<<"Digite su nombre: ";
     std::cin.getline(puntero_persona->nombre, 30, '\n');
     std::cout<<"Digite su edad: ";
@@ -436,6 +461,6 @@ void punteroEstructura2(){
     std::cout<<"Edad: "<<(puntero_alumno+pos)->edad<<std::endl;
     std::cout<<"Promedio: "<<(puntero_alumno+pos)->promedio<<std::endl;
 
-    
+
 }
 //  FIN DE CODIGO
