@@ -20,6 +20,8 @@ int main(){
 
 void menuPrincipal(){
 	printf("+------------Menu------------+\n");
+	printf("| 1- stdint.h                |\n");
+
 
 }
 
