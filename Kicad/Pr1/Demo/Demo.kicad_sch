@@ -1,0 +1,355 @@
+(kicad_sch (version 20211123) (generator eeschema)
+
+  (uuid e63e39d7-6ac0-4ffd-8aa3-1841a4541b55)
+
+  (paper "A4")
+
+  (lib_symbols
+    (symbol "Device:C_Small" (pin_numbers hide) (pin_names (offset 0.254) hide) (in_bom yes) (on_board yes)
+      (property "Reference" "C" (id 0) (at 0.254 1.778 0)
+        (effects (font (size 1.27 1.27)) (justify left))
+      )
+      (property "Value" "C_Small" (id 1) (at 0.254 -2.032 0)
+        (effects (font (size 1.27 1.27)) (justify left))
+      )
+      (property "Footprint" "" (id 2) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "~" (id 3) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "capacitor cap" (id 4) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Unpolarized capacitor, small symbol" (id 5) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_fp_filters" "C_*" (id 6) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "C_Small_0_1"
+        (polyline
+          (pts
+            (xy -1.524 -0.508)
+            (xy 1.524 -0.508)
+          )
+          (stroke (width 0.3302) (type default) (color 0 0 0 0))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -1.524 0.508)
+            (xy 1.524 0.508)
+          )
+          (stroke (width 0.3048) (type default) (color 0 0 0 0))
+          (fill (type none))
+        )
+      )
+      (symbol "C_Small_1_1"
+        (pin passive line (at 0 2.54 270) (length 2.032)
+          (name "~" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 0 -2.54 90) (length 2.032)
+          (name "~" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
+    (symbol "Device:LED" (pin_numbers hide) (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
+      (property "Reference" "D" (id 0) (at 0 2.54 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Value" "LED" (id 1) (at 0 -2.54 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (id 2) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "~" (id 3) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "LED diode" (id 4) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Light emitting diode" (id 5) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*" (id 6) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "LED_0_1"
+        (polyline
+          (pts
+            (xy -1.27 -1.27)
+            (xy -1.27 1.27)
+          )
+          (stroke (width 0.254) (type default) (color 0 0 0 0))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -1.27 0)
+            (xy 1.27 0)
+          )
+          (stroke (width 0) (type default) (color 0 0 0 0))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 1.27 -1.27)
+            (xy 1.27 1.27)
+            (xy -1.27 0)
+            (xy 1.27 -1.27)
+          )
+          (stroke (width 0.254) (type default) (color 0 0 0 0))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -3.048 -0.762)
+            (xy -4.572 -2.286)
+            (xy -3.81 -2.286)
+            (xy -4.572 -2.286)
+            (xy -4.572 -1.524)
+          )
+          (stroke (width 0) (type default) (color 0 0 0 0))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -1.778 -0.762)
+            (xy -3.302 -2.286)
+            (xy -2.54 -2.286)
+            (xy -3.302 -2.286)
+            (xy -3.302 -1.524)
+          )
+          (stroke (width 0) (type default) (color 0 0 0 0))
+          (fill (type none))
+        )
+      )
+      (symbol "LED_1_1"
+        (pin passive line (at -3.81 0 0) (length 2.54)
+          (name "K" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 3.81 0 180) (length 2.54)
+          (name "A" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
+    (symbol "Timer:NA555P" (in_bom yes) (on_board yes)
+      (property "Reference" "U" (id 0) (at -10.16 8.89 0)
+        (effects (font (size 1.27 1.27)) (justify left))
+      )
+      (property "Value" "NA555P" (id 1) (at 2.54 8.89 0)
+        (effects (font (size 1.27 1.27)) (justify left))
+      )
+      (property "Footprint" "Package_DIP:DIP-8_W7.62mm" (id 2) (at 16.51 -10.16 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "http://www.ti.com/lit/ds/symlink/ne555.pdf" (id 3) (at 21.59 -10.16 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "single timer 555" (id 4) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Precision Timers, 555 compatible, PDIP-8" (id 5) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_fp_filters" "DIP*W7.62mm*" (id 6) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "NA555P_0_0"
+        (pin power_in line (at 0 -10.16 90) (length 2.54)
+          (name "GND" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin power_in line (at 0 10.16 270) (length 2.54)
+          (name "VCC" (effects (font (size 1.27 1.27))))
+          (number "8" (effects (font (size 1.27 1.27))))
+        )
+      )
+      (symbol "NA555P_0_1"
+        (rectangle (start -8.89 -7.62) (end 8.89 7.62)
+          (stroke (width 0.254) (type default) (color 0 0 0 0))
+          (fill (type background))
+        )
+        (rectangle (start -8.89 -7.62) (end 8.89 7.62)
+          (stroke (width 0.254) (type default) (color 0 0 0 0))
+          (fill (type background))
+        )
+      )
+      (symbol "NA555P_1_1"
+        (pin input line (at -12.7 5.08 0) (length 3.81)
+          (name "TR" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+        (pin output line (at 12.7 5.08 180) (length 3.81)
+          (name "Q" (effects (font (size 1.27 1.27))))
+          (number "3" (effects (font (size 1.27 1.27))))
+        )
+        (pin input inverted (at -12.7 -5.08 0) (length 3.81)
+          (name "R" (effects (font (size 1.27 1.27))))
+          (number "4" (effects (font (size 1.27 1.27))))
+        )
+        (pin input line (at -12.7 0 0) (length 3.81)
+          (name "CV" (effects (font (size 1.27 1.27))))
+          (number "5" (effects (font (size 1.27 1.27))))
+        )
+        (pin input line (at 12.7 -5.08 180) (length 3.81)
+          (name "THR" (effects (font (size 1.27 1.27))))
+          (number "6" (effects (font (size 1.27 1.27))))
+        )
+        (pin input line (at 12.7 0 180) (length 3.81)
+          (name "DIS" (effects (font (size 1.27 1.27))))
+          (number "7" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
+  )
+
+
+  (image (at 48.26 154.94) (scale 3.45806)
+    (uuid b9c3387d-aead-45c5-a28c-bc48d72a0777)
+    (data
+      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
+    )
+  )
+
+  (symbol (lib_id "Device:C_Small") (at 99.06 152.4 0) (unit 1)
+    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (uuid 202f4bb4-5f31-4949-b1d0-b78c3a77d597)
+    (property "Reference" "C1" (id 0) (at 101.6 151.1362 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "C_Small" (id 1) (at 101.6 153.6762 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "" (id 2) (at 99.06 152.4 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (id 3) (at 99.06 152.4 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid c55bc341-3880-4daa-85be-cf8d41fb6462))
+    (pin "2" (uuid c3952dff-7bd1-42be-8328-9bc6858d6807))
+  )
+
+  (symbol (lib_id "Device:LED") (at 165.1 125.73 0) (unit 1)
+    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (uuid 6b1d2bb4-e07d-457a-8332-a57b8b4363ef)
+    (property "Reference" "D1" (id 0) (at 163.5125 119.38 0))
+    (property "Value" "LED" (id 1) (at 163.5125 121.92 0))
+    (property "Footprint" "" (id 2) (at 165.1 125.73 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (id 3) (at 165.1 125.73 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 5cd792ca-3271-4ec2-81e8-64c28edfac12))
+    (pin "2" (uuid 30912236-94cb-4482-ad1c-b8d509892810))
+  )
+
+  (symbol (lib_id "Timer:NA555P") (at 124.46 125.73 0) (unit 1)
+    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (uuid f988d6ea-11c5-4837-b1d1-5c292ded50c6)
+    (property "Reference" "U1" (id 0) (at 126.4794 113.03 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "NA555P" (id 1) (at 126.4794 115.57 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Package_DIP:DIP-8_W7.62mm" (id 2) (at 140.97 135.89 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "http://www.ti.com/lit/ds/symlink/ne555.pdf" (id 3) (at 146.05 135.89 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid f0ff5d1c-5481-4958-b844-4f68a17d4166))
+    (pin "8" (uuid 96db52e2-6336-4f5e-846e-528c594d0509))
+    (pin "2" (uuid 59fc765e-1357-4c94-9529-5635418c7d73))
+    (pin "3" (uuid 89a8e170-a222-41c0-b545-c9f4c5604011))
+    (pin "4" (uuid 9529c01f-e1cd-40be-b7f0-83780a544249))
+    (pin "5" (uuid d68e5ddb-039c-483f-88a3-1b0b7964b482))
+    (pin "6" (uuid 6f580eb1-88cc-489d-a7ca-9efa5e590715))
+    (pin "7" (uuid b13e8448-bf35-4ec0-9c70-3f2250718cc2))
+  )
+
+  (sheet_instances
+    (path "/" (page "1"))
+  )
+
+  (symbol_instances
+    (path "/202f4bb4-5f31-4949-b1d0-b78c3a77d597"
+      (reference "C1") (unit 1) (value "C_Small") (footprint "")
+    )
+    (path "/6b1d2bb4-e07d-457a-8332-a57b8b4363ef"
+      (reference "D1") (unit 1) (value "LED") (footprint "")
+    )
+    (path "/f988d6ea-11c5-4837-b1d1-5c292ded50c6"
+      (reference "U1") (unit 1) (value "NA555P") (footprint "Package_DIP:DIP-8_W7.62mm")
+    )
+  )
+)
