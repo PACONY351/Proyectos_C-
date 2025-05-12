@@ -1,0 +1,15 @@
+/home/francisco/Proyectos_C/Proyectos_C-/Fundamentos_Basicos_C#/Pr1/miPrimerApp/bin/Debug/net8.0/miPrimerApp
+/home/francisco/Proyectos_C/Proyectos_C-/Fundamentos_Basicos_C#/Pr1/miPrimerApp/bin/Debug/net8.0/miPrimerApp.deps.json
+/home/francisco/Proyectos_C/Proyectos_C-/Fundamentos_Basicos_C#/Pr1/miPrimerApp/bin/Debug/net8.0/miPrimerApp.runtimeconfig.json
+/home/francisco/Proyectos_C/Proyectos_C-/Fundamentos_Basicos_C#/Pr1/miPrimerApp/bin/Debug/net8.0/miPrimerApp.dll
+/home/francisco/Proyectos_C/Proyectos_C-/Fundamentos_Basicos_C#/Pr1/miPrimerApp/bin/Debug/net8.0/miPrimerApp.pdb
+/home/francisco/Proyectos_C/Proyectos_C-/Fundamentos_Basicos_C#/Pr1/miPrimerApp/obj/Debug/net8.0/miPrimerApp.GeneratedMSBuildEditorConfig.editorconfig
+/home/francisco/Proyectos_C/Proyectos_C-/Fundamentos_Basicos_C#/Pr1/miPrimerApp/obj/Debug/net8.0/miPrimerApp.AssemblyInfoInputs.cache
+/home/francisco/Proyectos_C/Proyectos_C-/Fundamentos_Basicos_C#/Pr1/miPrimerApp/obj/Debug/net8.0/miPrimerApp.AssemblyInfo.cs
+/home/francisco/Proyectos_C/Proyectos_C-/Fundamentos_Basicos_C#/Pr1/miPrimerApp/obj/Debug/net8.0/miPrimerApp.csproj.CoreCompileInputs.cache
+/home/francisco/Proyectos_C/Proyectos_C-/Fundamentos_Basicos_C#/Pr1/miPrimerApp/obj/Debug/net8.0/miPrimerApp.sourcelink.json
+/home/francisco/Proyectos_C/Proyectos_C-/Fundamentos_Basicos_C#/Pr1/miPrimerApp/obj/Debug/net8.0/miPrimerApp.dll
+/home/francisco/Proyectos_C/Proyectos_C-/Fundamentos_Basicos_C#/Pr1/miPrimerApp/obj/Debug/net8.0/refint/miPrimerApp.dll
+/home/francisco/Proyectos_C/Proyectos_C-/Fundamentos_Basicos_C#/Pr1/miPrimerApp/obj/Debug/net8.0/miPrimerApp.pdb
+/home/francisco/Proyectos_C/Proyectos_C-/Fundamentos_Basicos_C#/Pr1/miPrimerApp/obj/Debug/net8.0/miPrimerApp.genruntimeconfig.cache
+/home/francisco/Proyectos_C/Proyectos_C-/Fundamentos_Basicos_C#/Pr1/miPrimerApp/obj/Debug/net8.0/ref/miPrimerApp.dll
